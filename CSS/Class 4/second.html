@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+
+      .blackBox {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        display: none;
+      }
+
+      @media (min-width: 427px) and (max-width: 768px) {
+        .box {
+          width: 300px;
+          height: 300px;
+          background-color: red;
+          border-radius: 50%;
+        }
+
+        .blackBox {
+          display: block;
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 426px) {
+        .box {
+          width: 200px;
+          height: 100px;
+          background-color: rgb(204, 255, 0);
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Second Page</h2>
+
+    <div class="box"></div>
+    <div class="blackBox"></div>
+  </body>
+</html>
